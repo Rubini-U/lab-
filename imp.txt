@@ -1,0 +1,39 @@
+git init
+git add .
+git commit -m "first commit"
+git remote add origin "https://github.com/Rubini-U/testing.git"
+git remote set-url origin "https://github.com/Rubini-U/testing.git"
+git branch -M master
+git push -u origin master
+
+for changes: (git add .) again
+
+git config --global user.name "iholy19"
+git config --global user.email "sameeraholy@gmail.com"
+
+****************************************************************
+
+mount -t cifs //192.168.56.1/windows-share /mnt -o vers=2.0
+mount 
+cd /mnt
+touch file
+ll & ls
+
+yum install samba-client cifs-utils
+smbclient -L 192.168.56.1
+
+****************************************************************
+
+for C:
+sudo yum groupinstall 'Development Tools'
+
+****************************************************************
+
+adjust.c - main file with #include<grades.h>
+grades.c - implementation file with #include<grades.h>
+grades.h - header
+
+grades: adjust.c grades.c 
+	gcc -o grades adjust.c grades.c -I
+
+****************************************************************
